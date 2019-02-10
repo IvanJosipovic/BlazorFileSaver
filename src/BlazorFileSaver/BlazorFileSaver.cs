@@ -7,7 +7,7 @@ namespace BlazorFileSaver.JSInterop
     {
         public static Task SaveAs(string fileName, string text)
         {
-            // Implemented in exampleJsInterop.js
+            // Implemented in BlazorFileSaver.min.js
             return JSRuntime.Current.InvokeAsync<object>(
                 "BlazorFileSaver.saveAs",
                 fileName, text);
