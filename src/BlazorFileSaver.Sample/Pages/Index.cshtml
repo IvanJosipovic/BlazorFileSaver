@@ -5,7 +5,7 @@
 <input type="text" bind="@FileName" />
 <buton onclick="@Save" class="btn btn-primary">Save</buton>
 
-<textarea class="form-control" type="text" id="Data" bind="@Data" rows="20" spellcheck="false"></textarea>
+<textarea class="form-control" type="text" bind="@Data" rows="20"></textarea>
 
 @functions {
     private string FileName { get; set; } = "Sample.txt";
