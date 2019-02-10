@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <IsPackable>true</IsPackable>
+    <LangVersion>7.3</LangVersion>
+    <PackageVersion>0.8.0</PackageVersion>
+    <Title>Blazor.FileSaver</Title>
+    <Description>FileSaver.js JSInterop for Blazor</Description>
+    <Authors>Ivan Josipovic</Authors>
+    <PackageProjectUrl>https://github.com/IvanJosipovic/Blazor.FileSaver</PackageProjectUrl>
+    <PackageTags>Blazor;File;Save;FileSave;FileSaver</PackageTags>
+    <Version>0.8.0</Version>
+    <PackageReleaseNotes>Blazor 0.8.0 support</PackageReleaseNotes>
+    <PackageIconUrl>https://msdnshared.blob.core.windows.net/media/2018/04/Blazor-300x280.jpg</PackageIconUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- .js/.css files will be referenced via <script>/<link> tags; other content files will just be included in the app's 'dist' directory without any tags referencing them -->
+    <EmbeddedResource Include="content\**\*.js" LogicalName="blazor:js:%(RecursiveDir)%(Filename)%(Extension)" />
+    <EmbeddedResource Include="content\**\*.css" LogicalName="blazor:css:%(RecursiveDir)%(Filename)%(Extension)" />
+    <EmbeddedResource Include="content\**" Exclude="**\*.js;**\*.css" LogicalName="blazor:file:%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="content\Blazor.FileSaver.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Browser" Version="3.0.0-preview-19075-0444" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Build" Version="3.0.0-preview-19075-0444" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>
