@@ -1,7 +1,7 @@
 using Microsoft.JSInterop;
 using System.Threading.Tasks;
 
-namespace Blazor.FileSaver
+namespace BlazorFileSaver.JSInterop
 {
     public static class BlazorFileSaver
     {

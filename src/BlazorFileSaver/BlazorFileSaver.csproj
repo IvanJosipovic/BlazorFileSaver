@@ -5,10 +5,10 @@
     <IsPackable>true</IsPackable>
     <LangVersion>7.3</LangVersion>
     <PackageVersion>0.8.0</PackageVersion>
-    <Title>Blazor.FileSaver</Title>
-    <Description>FileSaver.js JSInterop for Blazor</Description>
+    <Title>BlazorFileSaver</Title>
+    <Description>Blazor Component wrapper for FileSaver.js</Description>
     <Authors>Ivan Josipovic</Authors>
-    <PackageProjectUrl>https://github.com/IvanJosipovic/Blazor.FileSaver</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/IvanJosipovic/BlazorFileSaver</PackageProjectUrl>
     <PackageTags>Blazor;File;Save;FileSave;FileSaver</PackageTags>
     <Version>0.8.0</Version>
     <PackageReleaseNotes>Blazor 0.8.0 support</PackageReleaseNotes>

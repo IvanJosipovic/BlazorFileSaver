@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Blazor.Hosting;
 
-namespace Blazor.FileSaver.Sample
+namespace BlazorFileSaver.Sample
 {
     public class Program
     {
