@@ -7,6 +7,7 @@ namespace BlazorFileSaver.Sample
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddBlazorFileSaver();
         }
 
         public void Configure(IComponentsApplicationBuilder app)

@@ -1,5 +1,4 @@
 ﻿@page "/"
-@using BlazorFileSaver.JSInterop
 <h1>
     BlazorFileSaver.Sample <a href="https://github.com/IvanJosipovic/BlazorFileSaver"><img src="GitHub-Mark-64px.png" /> GitHub</a>
 </h1>
@@ -9,6 +8,7 @@
 <textarea class="form-control" type="text" bind="@Data" rows="20"></textarea>
 
 @functions {
+    [Inject] private IBlazorFileSaver BlazorFileSaver { get; set; }
     private string FileName { get; set; } = "Sample.txt";
 
     private string Data { get; set; } = "Sample Text";

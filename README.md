@@ -4,7 +4,7 @@ Blazor Component wrapper for [FileSaver.js](https://github.com/eligrey/FileSaver
 
 
 # Installation
-[![NuGet Pre Release](https://img.shields.io/badge/nuget-0.8.0-orange.svg)](https://www.nuget.org/packages/BlazorFileSaver)
+[![NuGet Pre Release](https://img.shields.io/badge/nuget-0.9.0-orange.svg)](https://www.nuget.org/packages/BlazorFileSaver)
 
 
 
@@ -12,12 +12,29 @@ Blazor Component wrapper for [FileSaver.js](https://github.com/eligrey/FileSaver
 [Sample](https://blazorfilesaver.netlify.com)
 
 
+# Startup.cs
+```csharrp
+namespace BlazorFileSaver.Sample
+{
+    public class Startup
+    {
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddBlazorFileSaver(); // Add This!
+        }
+
+        public void Configure(IComponentsApplicationBuilder app)
+        {
+            app.AddComponent<App>("app");
+        }
+    }
+}
+```
 
 
 # Example
 ```csharp
 @page "/sample"
-@using BlazorFileSaver.JSInterop
 <h1>BlazorFileSaver.Sample</h1>
 
 <input type="text" bind="@FileName" />
@@ -27,6 +44,7 @@ Blazor Component wrapper for [FileSaver.js](https://github.com/eligrey/FileSaver
 <textarea class="form-control" type="text" bind="@Data" rows="20"></textarea>
 
 @functions {
+    [Inject] private IBlazorFileSaver BlazorFileSaver { get; set; }
     private string FileName { get; set; } = "Sample.txt";
 
     private string Data { get; set; } = "Sample Text";
