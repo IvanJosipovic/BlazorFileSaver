@@ -13,20 +13,20 @@ namespace BlazorFileSaver
             JSRuntime = jSRuntime;
         }
 
-        public Task SaveAs(string fileName, string text, string type = "text/plain;charset=utf-8")
-        {
-            // Implemented in BlazorFileSaver.min.js
-            return JSRuntime.InvokeAsync<object>(
-                "BlazorFileSaver.saveAs",
-                fileName, text, type);
-        }
-
-        public Task SaveAs(string fileName, object data, string type = "application/zip")
+        public Task SaveAs(string fileName, string data, string type = "text/plain;charset=utf-8")
         {
             // Implemented in BlazorFileSaver.min.js
             return JSRuntime.InvokeAsync<object>(
                 "BlazorFileSaver.saveAs",
                 fileName, data, type);
+        }
+
+        public Task SaveAsBase64(string fileName, string base64String, string type = "application/zip")
+        {
+            // Implemented in BlazorFileSaver.min.js
+            return JSRuntime.InvokeAsync<object>(
+                "BlazorFileSaver.saveAsBase64",
+                fileName, base64String, type);
         }
     }
 }

@@ -4,7 +4,7 @@ Blazor Component wrapper for [FileSaver.js](https://github.com/eligrey/FileSaver
 
 
 # Installation
-[![NuGet Pre Release](https://img.shields.io/badge/nuget-0.9.0-orange.svg)](https://www.nuget.org/packages/BlazorFileSaver)
+[![NuGet Pre Release](https://img.shields.io/badge/nuget-0.9.1-orange.svg)](https://www.nuget.org/packages/BlazorFileSaver)
 
 
 
