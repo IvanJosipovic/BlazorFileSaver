@@ -2,12 +2,12 @@
 <h1>
     BlazorFileSaver.Sample <a href="https://github.com/IvanJosipovic/BlazorFileSaver"><img src="GitHub-Mark-64px.png" /> GitHub</a>
 </h1>
-<input type="text" bind="@FileName" />
-<buton onclick="@Save" class="btn btn-primary">Save</buton>
+<input type="text" @bind="@FileName" />
+<buton @onclick="@Save" class="btn btn-primary">Save</buton>
 
-<textarea class="form-control" type="text" bind="@Data" rows="20"></textarea>
+<textarea class="form-control" type="text" @bind="@Data" rows="20"></textarea>
 
-@functions {
+@code {
     [Inject] private IBlazorFileSaver BlazorFileSaver { get; set; }
     private string FileName { get; set; } = "Sample.txt";
 

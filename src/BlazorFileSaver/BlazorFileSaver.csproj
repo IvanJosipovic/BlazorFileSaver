@@ -4,15 +4,14 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <IsPackable>true</IsPackable>
     <BlazorLinkOnBuild>false</BlazorLinkOnBuild>
-    <LangVersion>7.3</LangVersion>
-    <PackageVersion>0.9.1</PackageVersion>
+    <LangVersion>7.3</LangVersion>  
     <Title>BlazorFileSaver</Title>
     <Description>Blazor Component wrapper for FileSaver.js</Description>
     <Authors>Ivan Josipovic</Authors>
     <PackageProjectUrl>https://github.com/IvanJosipovic/BlazorFileSaver</PackageProjectUrl>
     <PackageTags>Blazor;File;Save;FileSave;FileSaver</PackageTags>
-    <Version>0.9.1</Version>
-    <PackageReleaseNotes>Added SaveAsBase64 which converts Base64 to Blob</PackageReleaseNotes>
+    <Version>3.0.0-preview6.19307.2-1</Version>
+    <PackageReleaseNotes>Upgraded to Blazor 3.0.0-preview6.19307.2</PackageReleaseNotes>
     <PackageIconUrl>https://msdnshared.blob.core.windows.net/media/2018/04/Blazor-300x280.jpg</PackageIconUrl>
   </PropertyGroup>
 
@@ -24,8 +23,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.Browser" Version="3.0.0-preview3-19153-02" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Build" Version="3.0.0-preview3-19153-02" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor" Version="3.0.0-preview6.19307.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor.Build" Version="3.0.0-preview6.19307.2" PrivateAssets="all" />
   </ItemGroup>
 
 </Project>
