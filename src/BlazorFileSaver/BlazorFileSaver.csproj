@@ -10,8 +10,8 @@
     <Authors>Ivan Josipovic</Authors>
     <PackageProjectUrl>https://github.com/IvanJosipovic/BlazorFileSaver</PackageProjectUrl>
     <PackageTags>Blazor;File;Save;FileSave;FileSaver</PackageTags>
-    <Version>3.0.0-preview6.19307.2-1</Version>
-    <PackageReleaseNotes>Upgraded to Blazor 3.0.0-preview6.19307.2</PackageReleaseNotes>
+    <Version>3.0.0-preview7.19365.7-1</Version>
+    <PackageReleaseNotes>Upgraded to Blazor 3.0.0-preview7.19365.7</PackageReleaseNotes>
     <PackageIconUrl>https://msdnshared.blob.core.windows.net/media/2018/04/Blazor-300x280.jpg</PackageIconUrl>
   </PropertyGroup>
 
@@ -23,8 +23,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Blazor" Version="3.0.0-preview6.19307.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Blazor.Build" Version="3.0.0-preview6.19307.2" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor" Version="3.0.0-preview7.19365.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor.Build" Version="3.0.0-preview7.19365.7" PrivateAssets="all" />
   </ItemGroup>
 
 </Project>
