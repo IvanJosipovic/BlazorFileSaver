@@ -55,3 +55,6 @@ namespace BlazorFileSaver.Sample
     }
 }
 ```
+
+# More Examples
+[SaveAsBase64 Zip](https://github.com/IvanJosipovic/BlazorFileSaver/blob/master/src/BlazorFileSaver.Sample/Pages/Index.razor)
