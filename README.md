@@ -13,7 +13,7 @@ Blazor Component wrapper for [FileSaver.js](https://github.com/eligrey/FileSaver
 
 
 # Startup.cs
-```csharrp
+```csharp
 namespace BlazorFileSaver.Sample
 {
     public class Startup
