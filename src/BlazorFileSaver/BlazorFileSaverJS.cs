@@ -15,7 +15,7 @@ namespace BlazorFileSaver
         public async Task SaveAs(string fileName, string data, string type = "text/plain;charset=utf-8")
         {
             // Implemented in BlazorFileSaver.min.js
-            await JSRuntime.InvokeAsync<object>(
+            await JSRuntime.InvokeVoidAsync(
                 "BlazorFileSaver.saveAs",
                 fileName, data, type);
         }
@@ -23,7 +23,7 @@ namespace BlazorFileSaver
         public async Task SaveAsBase64(string fileName, string base64String, string type = "application/zip")
         {
             // Implemented in BlazorFileSaver.min.js
-            await JSRuntime.InvokeAsync<object>(
+            await JSRuntime.InvokeVoidAsync(
                 "BlazorFileSaver.saveAsBase64",
                 fileName, base64String, type);
         }
