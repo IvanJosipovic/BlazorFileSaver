@@ -6,7 +6,7 @@ namespace BlazorFileSaver
     {
         public static IServiceCollection AddBlazorFileSaver(this IServiceCollection services)
         {
-            return services.AddTransient<IBlazorFileSaver, BlazorFileSaverJS>();
+            return services.AddScoped<IBlazorFileSaver, BlazorFileSaverJS>();
         }
     }
 }
