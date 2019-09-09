@@ -9,8 +9,8 @@
     <Authors>Ivan Josipovic</Authors>
     <PackageProjectUrl>https://github.com/IvanJosipovic/BlazorFileSaver</PackageProjectUrl>
     <PackageTags>Blazor;File;Save;FileSave;FileSaver</PackageTags>
-    <Version>3.0.0-preview9.19424.4-1</Version>
-    <PackageReleaseNotes>Upgraded to Blazor 3.0.0-preview9.19424.4</PackageReleaseNotes>
+    <Version>3.0.0-preview9.19424.4-2</Version>
+    <PackageReleaseNotes>Server Side Blazor Fix</PackageReleaseNotes>
     <PackageIconUrl>https://msdnshared.blob.core.windows.net/media/2018/04/Blazor-300x280.jpg</PackageIconUrl>
   </PropertyGroup>
 
