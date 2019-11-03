@@ -22,13 +22,13 @@ jobs:
         dotnet-version: 3.0.100
 
     - name: Publish
-      working-directory: src/BlazorFileSaver
+      working-directory: src/BlazorFileSaver.Sample
       run: dotnet publish -c Release
 
     - name: Deploy to Test
       uses: ivanjosipovic/actions/cli@master
       with:
-        args: deploy --json -d src/BlazorFileSaver/bin/Release/netstandard2.0/publish/BlazorFileSaver/dist/
+        args: deploy --json -d src/BlazorFileSaver.Sample/bin/Release/netstandard2.0/publish/BlazorFileSaver.Sample/dist/
       env:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
@@ -37,7 +37,7 @@ jobs:
       if: github.ref == 'refs/heads/master'
       uses: ivanjosipovic/actions/cli@master
       with:
-        args: deploy --prod --json -d src/BlazorFileSaver/bin/Release/netstandard2.0/publish/BlazorFileSaver/dist/
+        args: deploy --prod --json -d src/BlazorFileSaver.Sample/bin/Release/netstandard2.0/publish/BlazorFileSaver.Sample/dist/
       env:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
