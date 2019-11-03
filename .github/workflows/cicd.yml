@@ -13,7 +13,8 @@ jobs:
     timeout-minutes: 10
     
     steps:
-    - uses: actions/checkout@v1
+    - name: Checkout code
+      uses: actions/checkout@v1
 
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
@@ -25,7 +26,7 @@ jobs:
       run: dotnet publish -c Release
 
     - name: Deploy to Test
-      uses: netlify/actions/cli@master
+      uses: ivanjosipovic/actions/cli@master
       with:
         args: deploy --json -d src/BlazorFileSaver/bin/Release/netstandard2.0/publish/BlazorFileSaver/dist/
       env:
@@ -34,7 +35,7 @@ jobs:
 
     - name: Deploy to Production
       if: github.ref == 'refs/heads/master'
-      uses: netlify/actions/cli@master
+      uses: ivanjosipovic/actions/cli@master
       with:
         args: deploy --prod --json -d src/BlazorFileSaver/bin/Release/netstandard2.0/publish/BlazorFileSaver/dist/
       env:
