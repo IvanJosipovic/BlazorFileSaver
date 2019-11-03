@@ -26,7 +26,7 @@ jobs:
       run: dotnet publish -c Release
 
     - name: Deploy to Test
-      uses: ivanjosipovic/actions/cli@master
+      uses: netlify/actions/cli@master
       with:
         args: deploy --json -d src/BlazorFileSaver.Sample/bin/Release/netstandard2.0/publish/BlazorFileSaver.Sample/dist/
       env:
@@ -35,7 +35,7 @@ jobs:
 
     - name: Deploy to Production
       if: github.ref == 'refs/heads/master'
-      uses: ivanjosipovic/actions/cli@master
+      uses: netlify/actions/cli@master
       with:
         args: deploy --prod --json -d src/BlazorFileSaver.Sample/bin/Release/netstandard2.0/publish/BlazorFileSaver.Sample/dist/
       env:
