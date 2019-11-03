@@ -7,12 +7,17 @@
     <Title>BlazorFileSaver</Title>
     <Description>Blazor Component wrapper for FileSaver.js</Description>
     <Authors>Ivan Josipovic</Authors>
-    <PackageProjectUrl>https://github.com/IvanJosipovic/BlazorFileSaver</PackageProjectUrl>
+    <PackageProjectUrl>https://blazorfilesaver.netlify.com/</PackageProjectUrl>
     <PackageTags>Blazor;File;Save;FileSave;FileSaver</PackageTags>
-    <Version>3.0.0</Version>
-    <PackageReleaseNotes>Updated to Blazor 3.0.0</PackageReleaseNotes>
-    <PackageIconUrl>https://msdnshared.blob.core.windows.net/media/2018/04/Blazor-300x280.jpg</PackageIconUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/IvanJosipovic/BlazorFileSaver</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" PackagePath="" />
+  </ItemGroup>
 
   <ItemGroup>
     <!-- .js/.css files will be referenced via <script>/<link> tags; other content files will just be included in the app's 'dist' directory without any tags referencing them -->
