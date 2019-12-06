@@ -1,15 +1,18 @@
 # BlazorFileSaver
 
+ [![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/BlazorFileSaver.svg)](https://www.nuget.org/packages/BlazorFileSaver)
+
 Blazor Component wrapper for [FileSaver.js](https://github.com/eligrey/FileSaver.js/)
-
-
-# Installation
-[![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/BlazorFileSaver.svg)](https://www.nuget.org/packages/BlazorFileSaver)
-
-
 
 # Demo
 [Sample](https://blazorfilesaver.netlify.com)
+
+
+# Installation
+
+- Add Nuget BlazorFileSaver
+- Add ``<script src="_content/BlazorFileSaver/BlazorFileSaver.min.js"></script>`` to the index.html or _Hosts.cshtml
+- Add AddBlazorFileSaver() to the ConfigureServices in Startup.cs as noted below
 
 
 # Startup.cs
@@ -35,16 +38,19 @@ namespace BlazorFileSaver.Sample
 # Example
 ```csharp
 @page "/sample"
+
 <h1>BlazorFileSaver.Sample</h1>
 
-<input type="text" @bind="@FileName" />
+<input type="text" @bind="FileName" />
 
-<buton @onclick="@Save" class="btn btn-primary">Save</buton>
+<buton @onclick="Save" class="btn btn-primary">Save</buton>
 
-<textarea class="form-control" type="text" @bind="@Data" rows="20"></textarea>
+<textarea class="form-control" type="text" @bind="Data" rows="20"></textarea>
 
 @code {
-    [Inject] private IBlazorFileSaver BlazorFileSaver { get; set; }
+    [Inject]
+    private IBlazorFileSaver BlazorFileSaver { get; set; }
+    
     private string FileName { get; set; } = "Sample.txt";
 
     private string Data { get; set; } = "Sample Text";
