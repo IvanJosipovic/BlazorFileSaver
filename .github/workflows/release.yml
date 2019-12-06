@@ -19,13 +19,13 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 3.0.100
+        dotnet-version: 3.1.100
     
     - name: Dotnet Pack 
       working-directory: src/BlazorFileSaver
       run: dotnet pack -c Release -p:Version=${GITHUB_REF##*/v}
     
-    - name: Dotnet Nuget Push   
+    - name: Dotnet Nuget Push
       working-directory: src/BlazorFileSaver/bin/Release
       run: dotnet nuget push BlazorFileSaver.*.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_API_KEY }}
       continue-on-error: true
