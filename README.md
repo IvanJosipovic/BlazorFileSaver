@@ -1,6 +1,9 @@
 # BlazorFileSaver
 
- [![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/BlazorFileSaver.svg)](https://www.nuget.org/packages/BlazorFileSaver)
+[![Demo](https://img.shields.io/badge/Live-Demo-Blue?style=flat-square)](https://blazorfilesaver.netlify.com)
+[![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/BlazorFileSaver.svg?style=flat-square)](https://www.nuget.org/packages/BlazorTable)
+[![Nuget (with prereleases)](https://img.shields.io/nuget/dt/BlazorFileSaver.svg?style=flat-square)](https://www.nuget.org/packages/BlazorTable)
+![](https://github.com/IvanJosipovic/BlazorFileSaver/workflows/CI/CD/badge.svg)
 
 Blazor Component wrapper for [FileSaver.js](https://github.com/eligrey/FileSaver.js/)
 
