@@ -5,9 +5,10 @@
     <RazorLangVersion>3.0</RazorLangVersion>
     <IsPackable>true</IsPackable>
     <Title>BlazorFileSaver</Title>
+    <PackageId>BlazorFileSaver</PackageId>
     <Description>Blazor Component wrapper for FileSaver.js</Description>
     <Authors>Ivan Josipovic</Authors>
-    <PackageProjectUrl>https://blazorfilesaver.netlify.com/</PackageProjectUrl>
+    <PackageProjectUrl>https://blazorfilesaver.netlify.com</PackageProjectUrl>
     <PackageTags>Blazor;File;Save;FileSave;FileSaver</PackageTags>
     <PackageIcon>icon.png</PackageIcon>
     <RepositoryUrl>https://github.com/IvanJosipovic/BlazorFileSaver</RepositoryUrl>
