@@ -13,25 +13,26 @@ Blazor Component wrapper for [FileSaver.js](https://github.com/eligrey/FileSaver
 
 # Installation
 
-- Add Nuget BlazorFileSaver
+- Add Nuget [BlazorFileSaver](https://www.nuget.org/packages/BlazorTable)
 - Add ``<script src="_content/BlazorFileSaver/BlazorFileSaver.min.js"></script>`` to the index.html or _Hosts.cshtml
-- Add AddBlazorFileSaver() to the ConfigureServices in Startup.cs as noted below
+- Add AddBlazorFileSaver() to the ConfigureServices in Program.cs as noted below
 
 
-# Startup.cs
+# Program.cs
 ```csharp
 namespace BlazorFileSaver.Sample
 {
-    public class Startup
+    public class Program
     {
-        public void ConfigureServices(IServiceCollection services)
+        public static async Task Main(string[] args)
         {
-            services.AddBlazorFileSaver(); // Add This!
-        }
+            var builder = WebAssemblyHostBuilder.CreateDefault(args);
+            
+            builder.RootComponents.Add<App>("app");
 
-        public void Configure(IComponentsApplicationBuilder app)
-        {
-            app.AddComponent<App>("app");
+            builder.Services.AddBlazorFileSaver(); // Add This!
+
+            await builder.Build().RunAsync();
         }
     }
 }
