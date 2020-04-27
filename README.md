@@ -13,7 +13,7 @@ Blazor Component wrapper for [FileSaver.js](https://github.com/eligrey/FileSaver
 
 # Installation
 
-- Add Nuget [BlazorFileSaver](https://www.nuget.org/packages/BlazorTable)
+- Add Nuget [BlazorFileSaver](https://www.nuget.org/packages/BlazorFileSaver)
 - Add ``<script src="_content/BlazorFileSaver/BlazorFileSaver.min.js"></script>`` to the index.html or _Hosts.cshtml
 - Add AddBlazorFileSaver() to the ConfigureServices in Program.cs as noted below
 
